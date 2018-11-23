@@ -1,0 +1,119 @@
+.programm-main
+  position: relative
+  background: url(../img/programm/main-bg.png) no-repeat center
+  background-size: cover
+  min-height: 471px
+  z-index: 0
+  padding-top: 60px
+  &::before
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,.5)
+    z-index: -2
+    margin-top: -60px
+  .main-wrap
+    .logo 
+      width: 144px
+      height: 94px
+      background: url(../img/programm/main-logo.png) no-repeat center
+      background-size: contain
+    .main-heading
+      color: #ffffff
+      font-size: 70px
+      font-weight: 600
+      letter-spacing: 1.89px
+      text-align: center
+      text-transform: uppercase
+      margin-top: 55px
+    .main-descr
+      color: #ffffff
+      font-size: 23px
+      text-align: center
+    .main-author
+      opacity: 0.6
+      color: #ffffff
+      font-size: 23px
+      font-weight: 400
+      letter-spacing: 0.62px
+      text-align: right
+      padding-right: 110px
+.programms
+  .section-heading
+    letter-spacing: 1.08px
+    color: #000000
+    font-size: 40px
+    font-weight: 600
+    text-align: center
+    margin-top: 55px
+    margin-bottom: 55px
+.programms-wrap
+  display: flex
+  margin-bottom: 55px
+  @media (max-width: 992px)
+    flex-direction: column
+  .programm
+    position: relative
+    padding-top: 40px
+    padding-bottom: 60px
+    min-height: 673px
+    &-info
+      display: flex
+      justify-content: space-between
+      &_class
+        font-size: 30px
+        color: #ffffff
+        letter-spacing: 0.81px
+        margin-left: 20px
+        margin-bottom: 20px
+        font-weight: 600
+      &_age
+        font-size: 30px
+        letter-spacing: 0.81px
+        color: #ffffff
+        margin-right: 20px
+    &-heading
+      height: 59px
+      width: 239px
+      box-shadow: 0 0 13px rgba(0, 0, 0, 0.3)
+      background: #ffffff
+      margin-left: 0
+      margin-bottom: 40px
+    &-text
+      padding: 20px
+      font-size: 14px
+      margin-bottom: 35px
+  .programm1 .programm-heading, .programm2 .programm-heading
+    font-size: 40px
+    font-weight: 700
+    line-height: 60px
+    color: $main-blue
+    text-align: center
+  .programm2 .programm-heading
+    color: $main-pink
+  .programm1
+    margin-right: 30px
+    background: $main-blue
+    @media (max-width: 992px)
+      margin-right: 0
+      margin-bottom: 30px
+  .programm2
+    background: $main-pink
+  .programm-button1, .programm-button2
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    margin-top: 20px
+    width: 210px
+    height: 46px
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+    border: 1px solid #ffffff
+    background-color: #ffffff
+    color: $main-blue
+    margin-left: auto
+    margin-right: auto
+  .programm-button2
+    color: $main-pink
+.section-contacts_programms
+  background: #c6e3c3
