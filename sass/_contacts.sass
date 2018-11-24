@@ -1,0 +1,30 @@
+.section-grads
+  .grads-heading
+    padding: 55px 0
+    font-size: 40px
+    font-weight: 600
+  .grads-list
+    &_heading
+      font-size: 22px
+      margin-bottom: 20px !important
+      &::before
+        display: none
+    div
+      position: relative
+      margin-bottom: 10px
+      &::before
+        position: absolute
+        content: "•"
+        color: $main-blue
+        font-size: 20px
+        margin-left: -20px
+      &:last-child
+        margin-bottom: 50px
+  .grads-videos
+    display: flex
+    @media (max-width: 992px)
+      flex-direction: column
+    iframe
+      margin-bottom: 50px
+    iframe:first-child
+      margin-right: 25px
