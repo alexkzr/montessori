@@ -7,6 +7,7 @@
     text-decoration: none
 
   &-top
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
@@ -21,13 +22,65 @@
       height: 32px
       background-size: cover
       margin-left: 0
+  .menu-cover
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 20px
+    width: 25px
+    height: 20px
+    &:hover
+      cursor: pointer
+    .menu
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+      display: block
+      width: 18px
+      height: 2px
+      background-color: #212429
+      @media (min-width: 767px)
+        display: none
+      &:hover
+        cursor: pointer
+        transform: rotateY(360deg)
+        transition: .5s
+      &::before, &::after
+        position: absolute
+        content: ''
+        width: 23px
+        height: 2px
+        background-color: #212429
+      &::before
+        top: -5px
+      &::after
+        top: 5px
+    .menu.open
+      height: 0
+      &::after
+        transform: rotate(45deg)
+        transition: .5s
+      &::before
+        top: 5px
+        transform: rotate(-45deg)
+        transition: .5s
   &-bottom
     height: 70px
     background: $main-blue
+    @media (max-width: 768px)
+      position: absolute
+      width: 100%
+      z-index: 6
+      height: auto
+      background: rgba(174, 224, 245, 0.87)
     .container  
       height: 100%
     .hidden
-      display: none
+      @media (max-width: 768px)
+        display: none
+    .hidden-992
+      @media (min-width: 768px) and (max-width: 992px)
+        display: none
     ul
       height: 100%
       display: flex
@@ -35,6 +88,9 @@
       align-items: center
       padding-left: 0
       text-align: center
+      transition: .5s
+      @media (max-width: 768px)
+        flex-direction: column
       li
         list-style: none
         padding-left: 10px
@@ -51,9 +107,11 @@
           font-weight: 700
           line-height: 70px
       li:first-child
-        margin-left: 0
+        @media (min-width: 768px)
+          margin-left: 0
       li:nth-child(6n)
-        margin-right: 0
+        @media (min-width: 768px)
+          margin-right: 0
       li:hover
         box-shadow: 0 0 7px rgba(0, 0, 0, 0.26)
         background-color: #ffffff
@@ -78,6 +136,8 @@
       clear: both
       width: 100%
 .main-slider
+  .slick-dots
+    bottom: 10px
   .slick-next
     right: 20px
   .slick-prev
@@ -231,6 +291,32 @@
     display: flex
     min-height: 327px
     color: #ffffff
+    @media (max-width: 768px)
+      flex-direction: column
+    &_logo
+      @media (max-width: 768px)
+        margin-bottom: 35px
+        margin-left: 0
+      @media (max-width: 400px)
+        margin-left: auto
+        margin-right: auto
+      img
+        width: 100%
+        @media (max-width: 768px)
+          width: 150px
+          height: 100px
+    &_contacts
+      @media (max-width: 768px)
+        margin-bottom: 35px
+        margin-left: 15px
+      @media (max-width: 400px)
+        margin-left: 15px
+    &_time
+      @media (max-width: 768px)
+        margin-bottom: 35px
+        margin-right: 15px
+      @media (max-width: 400px)
+        margin-left: 15px
   .heading
     font-size: 20px
     font-weight: 600
@@ -270,3 +356,14 @@
       margin-right: 0
       .inst
         margin-right: 22px
+.slick-dots li.slick-active button:before
+  opacity: 1
+.main-slider .slick-dots li button:before, .main-slider .slick-dots li.slick-active button:before
+  font-size: 20px
+  color: $main-blue
+.gallery-slider .slick-dots li button:before, .gallery-slider .slick-dots li.slick-active button:before
+  font-size: 20px
+  color: $main-pink
+.hidden-lg
+  @media (min-width: 992px)
+    display: none
