@@ -42,6 +42,7 @@
             <li><a href="calendar.php"><span class="hidden-992">новости и </span>календарь</a></li>
             <li><a href="terms.php">условия</a></li>
             <li><a href="contacts.php">контакты</a></li>
+            <li><a href="full-version.php">Сведения об образовательной организации</a></li>
           </ul>
         </div>
       </nav>

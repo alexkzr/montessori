@@ -54,12 +54,17 @@
     <h2>Локальные нормативные акты:</h2>
     <div class="document">
       <a href="#" class="download" download><img src="img/document.png" alt="download" class="img">
-        <p class="description">Регламентирующие правила приема обучающихся</p>
+        <p class="description">Положение о правилах приема обучающихся</p>
       </a>
     </div>
     <div class="document">
       <a href="#" class="download" download><img src="img/document.png" alt="download" class="img">
-        <p class="description">Порядок оформления возникновения, приостановления и прекращения отношений между ОО и обучающимися</p>
+        <p class="description">Положение о режиме занятий обучающихся</p>
+      </a>
+    </div>
+    <div class="document">
+      <a href="#" class="download" download><img src="img/document.png" alt="download" class="img">
+        <p class="description">Положение о порядке оформления возникновения, приостановления и прекращения отношений между ОО и обучающимися</p>
       </a>
     </div>
     <div class="document">
@@ -73,8 +78,8 @@
       </a>
     </div>
     <div class="document">
-      <a href="#" class="download" download><img src="img/document.png" alt="download" class="img">
-        <p class="description">Коллективный договор</p>
+      <a href="docs/трудовой договор сотрудники ЧОУ.docx" class="download" download><img src="img/document.png" alt="download" class="img">
+        <p class="description">Трудовой договор сотрудника ЧОУ</p>
       </a>
     </div>
     <div class="document">
@@ -83,8 +88,8 @@
       </a>
     </div>
     <div class="document">
-      <a href="#" class="download" download><img src="img/document.png" alt="download" class="img">
-        <p class="description">Порядок и основания перевода, отчисления и восстановления обучающихся</p>
+      <a href="docs/Положение о переводе - отчисл - восстановл МСС.pdf" class="download" download><img src="img/document.png" alt="download" class="img">
+        <p class="description">Положение о порядке и основании перевода, отчисления и восстановления обучающихся</p>
       </a>
     </div>
     <div class="document">
@@ -94,17 +99,17 @@
     </div>
     <div class="document">
       <a href="#" class="download" download><img src="img/document.png" alt="download" class="img">
-        <p class="description">Документ о порядке оказания платных услуг</p>
+        <p class="description">Положение о порядке оказания платных услуг</p>
       </a>
     </div>
     <div class="document">
-      <a href="#" class="download" download><img src="img/document.png" alt="download" class="img">
+      <a href="docs/contract.docx" class="download" download><img src="img/document.png" alt="download" class="img">
         <p class="description">Образец договора об оказании платных образовательных услуг</p>
       </a>
     </div>
     <div class="document">
-      <a href="#" class="download" download><img src="img/document.png" alt="download" class="img">
-        <p class="description">Документ об утверждении стоимости обучения по образовательной программе</p>
+      <a href="docs/Приказ об утверждении стоимости обучения МСС.pdf" class="download" download><img src="img/document.png" alt="download" class="img">
+        <p class="description">Приказ об утверждении стоимости обучения по образовательной программе</p>
       </a>
     </div>
     <div class="document">
@@ -122,15 +127,6 @@
         <p class="description">Отчет об исполнении предписания</p>
       </a>
     </div>
-
-
-
-
-
-
-
-
-
   </div>
 
 </div>

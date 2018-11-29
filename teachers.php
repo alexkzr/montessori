@@ -32,25 +32,18 @@
             </div>
             <div class="teacher teacher2">
               <div class="photo">
-                <img src="img/teachers/teacher2.png" alt="" />
-              </div>
-              <div class="name">Юлия Мавлетбаева</div>
-              <div class="position">Директор. Педагог 3-6</div>
-            </div>
-            <div class="teacher teacher3">
-              <div class="photo">
-                <img src="img/teachers/teacher3.png" alt="" />
+                <img src="img/teachers/teacher2.jpg" alt="" />
               </div>
               <div class="name">Ольга Строева</div>
-              <div class="position">Зам. Директора. Педагог 0-3</div>
+              <div class="position">Директор. Педагог 0-3</div>
             </div>
-            <div class="teacher teacher4">
+            <!-- <div class="teacher teacher4">
               <div class="photo">
                 <img src="img/teachers/teacher4.jpg" alt="" />
               </div>
               <div class="name">Марина Павлей</div>
               <div class="position">Монтессори-педагог 3-6</div>
-            </div>
+            </div> -->
             <div class="teacher teacher5">
               <div class="photo">
                 <img src="img/teachers/teacher5.jpg" alt="" />
@@ -58,13 +51,13 @@
               <div class="name">Мария Кошелева</div>
               <div class="position">Mузыкальный руководитель</div>
             </div>
-            <div class="teacher teacher6">
+            <!-- <div class="teacher teacher6">
               <div class="photo">
                 <img src="img/teachers/teacher6.jpg" alt="" />
               </div>
               <div class="name">Анастасия Морозова</div>
               <div class="position">Ассистент Монтессори педагога 3-6</div>
-            </div>
+            </div> -->
             <div class="teacher teacher7">
               <div class="photo">
                 <img src="img/teachers/teacher7.jpg" alt="" />
@@ -72,20 +65,20 @@
               <div class="name">Жанна Дмитриева</div>
               <div class="position">Ассистент Монтессори педагога 0-3</div>
             </div>
-            <div class="teacher teacher8">
+            <!-- <div class="teacher teacher8">
               <div class="photo">
                 <img src="img/teachers/teacher8.jpg" alt="" />
               </div>
               <div class="name">Надежда Дмитриева</div>
               <div class="position">Ассистент Монтессори педагога 0-3</div>
-            </div>
-            <div class="teacher teacher9">
+            </div> -->
+            <!-- <div class="teacher teacher9">
               <div class="photo">
                 <img src="img/teachers/teacher9.jpg" alt="" />
               </div>
               <div class="name">Тella Aumeister</div>
               <div class="position">Ассистент Монтессори педагога 3-6</div>
-            </div>
+            </div> -->
             <div class="teacher teacher10">
               <div class="photo">
                 <img src="img/teachers/teacher10.jpg" alt="" />
@@ -97,16 +90,16 @@
               <div class="photo">
                 <img src="img/teachers/teacher11.jpg" alt="" />
               </div>
-              <div class="name">Екатерина Фёдорова</div>
-              <div class="position">Преподаватель ритмопластики</div>
+              <div class="name">Ольга Дмитриева</div>
+              <div class="position">Учитель, Менеджер</div>
             </div>
-            <div class="teacher teacher12">
+            <!-- <div class="teacher teacher12">
               <div class="photo">
                 <img src="img/teachers/teacher12.jpg" alt="" />
               </div>
               <div class="name">Татьяна Маркова</div>
               <div class="position">Логопед</div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

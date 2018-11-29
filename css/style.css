@@ -66,7 +66,7 @@
   background-color: #212429;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 991px) {
   .header .menu-cover .menu {
     display: none;
   }
@@ -125,7 +125,7 @@
   background: #aee0f5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-bottom {
     position: absolute;
     width: 100%;
@@ -139,7 +139,7 @@
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-bottom .hidden {
     display: none;
   }
@@ -169,7 +169,7 @@
   transition: .5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-bottom ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -198,16 +198,15 @@
   letter-spacing: 0.41px;
   font-size: 15px;
   font-weight: 700;
-  line-height: 70px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header-bottom ul li:first-child {
     margin-left: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header-bottom ul li:nth-child(6n) {
     margin-right: 0;
   }
@@ -931,6 +930,8 @@
   width: 262px;
   height: 318px;
   margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section-teachers .teacher .name {
@@ -1216,6 +1217,153 @@
 
 .section-grads .grads-videos iframe:first-child {
   margin-right: 25px;
+}
+
+.structure {
+  text-align: justify;
+}
+
+.primary > li {
+  list-style: none !important;
+  margin-top: 10px;
+}
+
+.primary > ul > li {
+  list-style: disc;
+}
+
+ol > li {
+  list-style: decimal !important;
+}
+
+.heading {
+  margin: 30px 0;
+}
+
+.main-subheading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.main-heading {
+  margin: 45px 0 25px 0;
+  text-align: center;
+}
+
+table td {
+  padding: 5px;
+  border: 2px solid #aee0f5;
+  margin-bottom: 5px;
+}
+
+table td tr {
+  margin-bottom: 5px;
+}
+
+.download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.documents-wrap .description, .document .description {
+  margin-left: 20px;
+  color: #000000;
+}
+
+.documents-wrap .document, .document {
+  margin-bottom: 30px;
+}
+
+.documents-wrap .img, .document .img {
+  width: 70px;
+  margin: 0;
+}
+
+.tag-cloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tag-cloud a {
+  display: block;
+  padding: 5px;
+  border: 2px solid #aee0f5;
+  color: #000000;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+.tag-cloud a:hover {
+  border: 2px solid transparent;
+  background-color: #8abe84;
+  color: #ffffff;
+}
+
+.li-none {
+  list-style: none !important;
+}
+
+.new-line {
+  margin-left: 50px;
+}
+
+.presentation p {
+  margin: 20px 0;
+}
+
+.tac {
+  text-align: center;
+  margin: 15px;
+  font-weight: 700;
+}
+
+.tac300 {
+  font-weight: 300;
+}
+
+.inner-section {
+  padding: 70px 20px;
+}
+
+.inner-section p {
+  margin: 15px;
+}
+
+.teacher-info p {
+  padding: 7px;
+}
+
+.teacher-info p:not(:first-child) {
+  margin-left: 50px;
+}
+
+.teacher-info p:first-child {
+  font-weight: 700;
+}
+
+th {
+  border: 1px solid black;
+  background: darkgrey;
+  padding: 10px;
+}
+
+.material-table table td {
+  border: 1px solid black;
+}
+
+.bbn {
+  border-bottom: 0px solid black !important;
+}
+
+.btopn {
+  border-top: 0px solid black !important;
 }
 
 * {
