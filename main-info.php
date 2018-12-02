@@ -18,11 +18,6 @@
 <!-- /.programm-main -->
 
 <?php include 'sitemap.php'?>
-<ul class="breadcrumbs">
-  <li><a href="index.php">Главная</a></li>
-  <li><a href="full-version.php">Сведения об организации</a></li>
-  <li>Сведения</li>
-</ul>
 
 <div class="container">
   <div class="content">

@@ -18,11 +18,6 @@
 <!-- /.programm-main -->
 
 <?php include 'sitemap.php'?>
-<ul class="breadcrumbs">
-  <li><a href="index.php">Главная</a></li>
-  <li><a href="full-version.php">Сведения об организации</a></li>
-  <li>Вакансии</li>
-</ul>
 <div class="container">
   <div class="inner-section">
     <p>ЧОУ «Интернешнл монтессори скул» не ведёт образовательной деятельности, финансовое обеспечение которой
@@ -33,6 +28,11 @@
       бухгалтерской отчетности ЧОУ «Интернешнл монтессори скул».</p>
     <p>Доход, получаемый в течение финансового года, используется в соответствии с уставными целями ЧОУ «Интернешнл
       монтессори скул».</p>
+    <div class="document">
+      <a href="/docs/fin.jpg" class="download" download><img src="img/document.png" alt="download" class="img">
+        <p class="description">Отчет об исполнении финансово-хозяйственной деятельности</p>
+      </a>
+    </div>
   </div>
 </div>
 <?php include 'footer.php'?>

@@ -55,8 +55,6 @@
           {
             breakpoint: 576,
             settings: {
-              arrows: false,
-              dots: true,
               slidesToShow: 1,
               slidesToScroll: 1
             }

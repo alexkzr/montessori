@@ -2,7 +2,7 @@
 	<div class="container">
 		<h2>Меню по сайту:</h2>
 		<div class="tag-cloud">
-			<a href="main-info.php">Основные сведения</a>
+			<a href="full-version.php">Основные сведения</a>
 			<a href="structure.php">Структура и органы управления образовательной организацией</a>
 			<a href="documents.php">Документы</a>
 			<a href="education.php">Образование</a>

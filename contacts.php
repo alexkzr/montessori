@@ -1,6 +1,8 @@
 <?php include 'header.php'?>
       <div class="section-grads">
         <div class="container">
+        <?php include 'contacts-b.php'?>
+        <?php include 'map.php'?>
           <div class="grads-heading">Выпускники монтессори</div>
           <!-- /.grads-heading -->
           <div class="grads-list">
@@ -56,7 +58,7 @@
           <!-- /.grads-list -->
           <div class="grads-videos">
             <iframe
-              width="560"
+              max-width="560"
               height="315"
               src="https://www.youtube.com/embed/0C_DQxpX-Kw?rel=0"
               frameborder="0"
@@ -64,7 +66,7 @@
               allowfullscreen=""
             ></iframe>
             <iframe
-              width="560"
+              max-width="560"
               height="315"
               src="https://www.youtube.com/embed/3OCAdXjlLBA?rel=0"
               frameborder="0"
@@ -77,6 +79,4 @@
       </div>
       <!-- /.section-grads -->
     </div>
-<?php include 'contacts-b.php'?>
-<?php include 'map.php'?>
 <?php include 'footer.php'?>

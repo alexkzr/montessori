@@ -4,7 +4,7 @@ var browserSync = require('browser-sync').create();
 // Static Server + watching scss/html files
 gulp.task('serve', function() {
   browserSync.init({
-    proxy: 'montesori' //название папки домена в опен сервере
+    proxy: 'localhost/montesori' //название папки домена в опен сервере
   });
 
   gulp.watch('**/*.html').on('change', browserSync.reload);
