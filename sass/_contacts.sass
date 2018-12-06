@@ -7,6 +7,9 @@
     &_heading
       font-size: 22px
       margin-bottom: 20px !important
+      @media (max-width: 576px)
+        font-size: 16px
+        text-align: center
       &::before
         display: none
     div
@@ -26,5 +29,7 @@
       flex-direction: column
     iframe
       margin-bottom: 50px
+      @media (max-width: 576px)
+        width: 100%
     iframe:first-child
       margin-right: 25px

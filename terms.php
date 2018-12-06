@@ -1,3 +1,6 @@
+/* Template Name: Terms
+*/
+
 <?php include 'header.php'?>
 
       <div class="terms-section">

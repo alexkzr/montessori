@@ -1,13 +1,16 @@
+/* Template Name: Employees
+*/
+
 <?php include 'header.php'?>
 <div class="programm-main">
         <div class="container">
           <div class="main-wrap">
             <div class="logo"></div>
             <!-- /.logo -->
-            <h1 class="main-heading">Руководство и педагогический состав</h1>
+            <h1 class="main-heading"><?php echo the_field('main-heading');?></h1>
             <!-- /.main-heading -->
             <p class="main-descr">
-              Здесь можно посмотреть информацию о руководстве и педагогическом (научно-педагогическом) составе
+            <?php echo the_field('main-subheading');?>
             </p>
             <!-- /.main-descr -->
           </div>
@@ -18,15 +21,11 @@
       <!-- /.programm-main -->
 
 <?php include 'sitemap.php'?>
-      <ul class="breadcrumbs">
-        <li><a href="index.php">Главная</a></li>
-        <li><a href="full-version.php">Сведения об организации</a></li>
-        <li>Состав</li>
-      </ul>
+
 
       <div class="container">
         <div class="inner-section">
-          <h4 class="tac">1) Руководитель</h4>
+          <!-- <h4 class="tac">1) Руководитель</h4>
           <p>Строева Ольга Александровна - Директор ЧОУ "Интернешнл Монетессори скул"<br>
               Телефон +7 (965) 090-30-73<br>
               Электронная почта: stroeva@gmail.com<br></p>
@@ -35,62 +34,63 @@
           Электронная почта: stroeva@gmail.com</h4>
           <h4>Руководители филиалов</h4>
           <p>У данного учреждения нет филиалов.</p>
-          <h4 class="tac">2) Педагогический состав</h4>
-          <ol>
-            <li>Toddler группа 2,5-3 года
+          <h4 class="tac">2) Педагогический состав</h4> -->
+          <?php 
+            $id=40; 
+            $post = get_post($id); 
+            $content = apply_filters('the_content', $post->post_content); 
+            echo $content;  
+            ?>
+            <?php echo the_field('group1name'); ?>
               <div class="teacher-info">
-                <p>Строева Ольга Александровна - Старший учитель, Директор</p>
-<p> Государственное образовательное учреждение высшего профессионального образования «Российский Государственный педагогический университет им. А.И. Герцена», диплом ВСГ 0485479 от 30 июня 2006 г. Квалификация – учитель географии по специальности «География»</p>
-<p>Language Institute Kyungpook National University, сентябрь 2003 г.</p>
-<p>Росийский государственный педагогический университет имени А.И, Герцена, Спортивно-оздоровительный центр, Программа «Ритмическая гимнастика и аэробика с элементами шейпинга». Удостоверение рег.№ 206/03 – 2003 г.</p>
-<p>Российский Государственный педагогический университет имени А.И. Герцена, Лингивсический центр, 2005 г.</p>
-<p>Государственное образовательное учреждение высшего профессионального образования «Российский государственный педагогический университет им. А.И. Герцена». Программа «Основы педагогики Марии Монтессори». Удостоверение рег.№ 829 – 2006 г.</p>
-<p>Государственное образовательное учреждение высшего профессионального образования «Российский государственный педагогический университет им. А.И. Герцена», Программа «Основы педагогики Марии Монтессори». Удостоверение рег.№ 886 – 2007 г.</p>
-<p>Академия педагогического образования. Программа «Технологии обучения иностранному языку в ДОУ». Удостоверение рег.№ 7649 – 2010 г.</p>
-<p>Педагогический стаж - 12 лет</p>
-<p>Общий стаж - 12 лет</p>
+              <img src="<?php echo the_field('teacher1photo'); ?>" alt="">
+               <div class="teacher-info__text">
+                  <p><?php echo the_field('teacher1name'); ?></p>
+                  <p><?php echo the_field('teacher1info'); ?></p>
+               </div>
 
               </div>
               <div class="teacher-info">
-            <p>Дмитриева Жанна Владимировна - Учитель, Спортивный по физической культуре</p>
-<p>Федеральное государственное бюджетное образовательное учреждение высшего профессионального образования «Российский государственный педагогический университет им. А.И. Герцена», Институт детства, педагог</p>
-<p> КМС по художественной гимнастике. </p>
-  <p>Педагогический стаж - 5 лет </p>
-  <p>Общий стаж - 7 лет</p>
-            </div>
-            </li>
-            <li>Primary группа 3-7 лет
-              <div class="teacher-info">
-                <p>Кошелева Мария Алексеевна - Старший учитель, музыкальный учитель</p>
-                <p>Санкт-Петербургский музыкально-педагогический колледж №3, музыкальный руководитель</p>
-                <p>LCC International University, Language Institute</p>
-                <p>Санкт–Петербургский государственный институт культуры, дирижер академического хора</p>
-                <p>Федеральное государственное автономное образовательное учреждение дополнительного профессионального образования «Академия повышения квалификации и профессиональной переподготовки работников образования» (ФГАОУ ДПО АПК и ППРО), преподаватель английского языка</p>
-                <p>Музыка в Монтессори</p>
-                <p>Educators Course Kindermusik International</p>
-                <p>Педагогический стаж - 6 лет</p>
-                <p>Общий стаж - 6 лет</p>
-              </div>
-              <div class="teacher-info">
-                <p>Дмитриева Ольга Игоревна - Учитель, Менеджер</p>
-                <p>Федеральное государственное бюджетное образовательное учреждение высшего профессионального образования «Российский государственный педагогический университет им. А.И. Герцена», Институт детства, кафедра английского языка и методики дошкольного обучения английскому языку. Неоконченное высшее.</p>
-                <p>«Основы педагогики Марии Монтессори» 2014</p>
-                <p>BYU – Idaho, Education and Human Development - 17/09/2018</p>
+              <img src="<?php echo the_field('teacher2photo'); ?>" alt="">
+               <div class="teacher-info__text">
+                  <p><?php echo the_field('teacher2name'); ?></p>
+                  <p><?php echo the_field('teacher2info'); ?></p>
+               </div>
 
-                <p>Педагогический стаж - 7 лет</p>
-                <p>Общий стаж - 9 лет</p>
+              </div>
+              <?php echo the_field('group2name'); ?>
+            <div class="teacher-info">
+              <img src="<?php echo the_field('teacher3photo'); ?>" alt="">
+               <div class="teacher-info__text">
+                  <p><?php echo the_field('teacher3name'); ?></p>
+                  <p><?php echo the_field('teacher3info'); ?></p>
+               </div>
 
               </div>
               <div class="teacher-info">
-              <p>Эмиль Керимов</p>
-              <p>Тренер по шахматам</p>
+              <img src="<?php echo the_field('teacher4photo'); ?>" alt="">
+               <div class="teacher-info__text">
+                  <p><?php echo the_field('teacher4name'); ?></p>
+                  <p><?php echo the_field('teacher4info'); ?></p>
+               </div>
+
               </div>
               <div class="teacher-info">
-                <p>Татьяна Маркова</p>
-                <p>Логопед</p>
+              <img src="<?php echo the_field('teacher5photo'); ?>" alt="">
+               <div class="teacher-info__text">
+                  <p><?php echo the_field('teacher5name'); ?></p>
+                  <p><?php echo the_field('teacher5info'); ?></p>
+               </div>
+
               </div>
-            </li>
-          </ol>
+              <div class="teacher-info">
+              <img src="<?php echo the_field('teacher6photo'); ?>" alt="">
+               <div class="teacher-info__text">
+                  <p><?php echo the_field('teacher6name'); ?></p>
+                  <p><?php echo the_field('teacher6info'); ?></p>
+               </div>
+
+              </div>
         </div>
       </div>
 <?php include 'footer.php'?>
@@ -100,10 +100,3 @@
 
 
 
-
-
-
-
-Логопед
-
-Тренер по шахматам

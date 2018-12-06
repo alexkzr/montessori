@@ -1,3 +1,6 @@
+/* Template Name: Calendar
+*/
+
 <?php include 'header.php'?>
 
       <div class="section-events">

@@ -12,6 +12,36 @@
     justify-content: space-between
     align-items: center
     height: 70px
+    &__contacts, &__buttons
+      display: flex
+      margin-left: 0
+      @media (max-width: 992px)
+        flex-direction: column
+      @media (max-width: 576px)
+        margin-right: 10px
+      @media (max-width: 380px)
+        margin-right: 3px
+      a
+        @media (max-width: 576px)
+          font-size: 12px
+    &__si
+      @media (min-width: 991px)
+        display: none
+      @media (max-width: 576px)
+        margin-left: 0
+      a
+        img
+          width: 30px
+          height: 30px
+
+    &__buttons
+      margin-right: 0
+    .header-phone
+      margin-right: 20px
+      @media (max-width: 992px)
+        margin-left: 0
+    .full
+      margin-right: 20px
     .container  
       display: flex
       align-items: center
@@ -22,9 +52,13 @@
       height: 32px
       background-size: cover
       margin-left: 0
+      margin-right: 20px
+      @media (max-width: 576px)
+        margin-right: 5px
+
   .menu-cover
     position: absolute
-    top: 50%
+    top: 48%
     transform: translateY(-50%)
     right: 20px
     width: 25px
@@ -53,15 +87,21 @@
         background-color: #212429
       &::before
         top: -5px
+        transform: rotate(0deg)
+        transition: .5s
       &::after
         top: 5px
+        transform: rotate(0deg)
+        transition: .5s
     .menu.open
+      top: 25%
       height: 0
       &::after
+        top: 0
         transform: rotate(45deg)
         transition: .5s
       &::before
-        top: 5px
+        top: 2px
         transform: rotate(-45deg)
         transition: .5s
   &-bottom
@@ -72,7 +112,7 @@
       width: 100%
       z-index: 6
       height: auto
-      background: rgba(174, 224, 245, 0.87)
+      background: rgba(174, 224, 245, 1)
     .container  
       height: 100%
     .hidden
@@ -92,12 +132,30 @@
       @media (max-width: 992px)
         flex-direction: column
       li
+        position: relative
         list-style: none
         padding-left: 10px
         padding-right: 10px
-        display: block
+        display: flex
+        align-items: center
         transition: .5s
         transition-duration: 0.5s
+        height: 100%
+        @media (max-width: 992px)
+          min-height: 50px
+          width: 100%
+          padding: 20px
+        ul.sub-menu
+          position: absolute
+          top: 70px
+          background: $main-blue
+          height: auto
+          @media (max-width: 992px)
+            display: none
+          li
+            height: 70px
+            @media (max-width: 992px)
+              display: none
         a
           display: block
           text-transform: uppercase
@@ -105,13 +163,16 @@
           letter-spacing: 0.41px
           font-size: 15px
           font-weight: 700
+          @media (max-width: 992px)
+            font-size: 20px
           
       li:first-child
         @media (min-width: 992px)
           margin-left: 0
-      li:nth-child(6n)
+      li:nth-child(7n)
         @media (min-width: 992px)
           margin-right: 0
+          padding-right: 0
       li:hover
         box-shadow: 0 0 7px rgba(0, 0, 0, 0.26)
         background-color: #ffffff
@@ -138,8 +199,11 @@
 .main-slider
   .slick-dots
     bottom: 10px
+  .main-slider .slick-dots li button:before, .main-slider .slick-dots li.slick-active button:before 
+    @media (max-width: 576px)
+      font-size: 14px
   .slick-next
-    right: 20px
+    right: 30px
   .slick-prev
     left: 20px
     z-index: 5
@@ -161,6 +225,7 @@
     align-items: center
     background-size: cover
     min-height: 525px
+    height: auto
     z-index: 2
     &::before
       position: absolute
@@ -195,10 +260,15 @@
       @media (min-width: 768px)
         font-size: 25px
         line-height: unset
-    .logo
-      width: 144px
-      height: 94px
-      margin-bottom: 25px
+      @media (max-width: 576px)
+        font-size: 22px
+.main .logo, .main-wrap .logo 
+  width: 144px
+  height: 94px
+  margin-bottom: 25px
+  @media (max-width: 576px)
+    width: 80px
+    height: auto
 
 .section-about
   padding-top: 54px
@@ -252,10 +322,23 @@
     letter-spacing: 1.08px
     text-align: center
     margin-bottom: 55px
+    @media (max-width: 576px)
+      font-size: 30px
   .gallery-slider
     position: relative
+    .slick-prev
+      @media (max-width: 480px)
+        left: 10px
+        opacity: 1
+        z-index: 5
+    .slick-next
+      right: -10px
+      @media (max-width: 480px)
+        right: 20px
+        opacity: 1
     .slick-slide
       display: block
+      height: auto
     img
       height: 324px
       width: 100%
@@ -283,6 +366,8 @@
     letter-spacing: 1.08px
     text-align: center
     margin-bottom: 60px
+    @media (max-width: 576px)
+      font-size: 30px
   iframe
     min-height: 548px
 .section-contacts
@@ -364,6 +449,14 @@
 .gallery-slider .slick-dots li button:before, .gallery-slider .slick-dots li.slick-active button:before
   font-size: 20px
   color: $main-pink
-.hidden-lg
-  @media (min-width: 992px)
-    display: none
+
+.wp-block-cover__main-cover, .wp-block-cover, .wp-block-cover-image
+  background-size: cover
+  background-repeat: no-repeat
+  @media (min-width: 1201px)
+    background-position-y: -50px
+  @media (max-width: 1200px)
+    background-position-y: -10px
+  @media (max-width: 1090px)
+    background-position-y: 0px
+

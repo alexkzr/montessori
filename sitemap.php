@@ -2,17 +2,19 @@
 	<div class="container">
 		<h2>Меню по сайту:</h2>
 		<div class="tag-cloud">
-			<a href="main-info.php">Основные сведения</a>
-			<a href="structure.php">Структура и органы управления образовательной организацией</a>
-			<a href="documents.php">Документы</a>
-			<a href="education.php">Образование</a>
-			<a href="edustandards.php">Образовательные стандарты</a>
-			<a href="employees.php">Руководство и педагогический состав</a>
-			<a href="material.php">Материально-техническое обеспечение</a>
-			<a href="scholarships.php">Стипендии и иные виды материальной поддержки</a>
-			<a href="paid.php">Платные образовательные услуги</a>
-			<a href="financial.php">Финансово-хозяйственная деятельность</a>
-			<a href="vacancies.php">Вакантные места</a>
+			<?php
+			wp_nav_menu( 
+				$menuParameters = array(
+				'theme_location'  => '',
+				'menu'            => 'Secondary', 
+				'container'       => '', 
+				'echo'            => false,
+				'items_wrap'      => '%3$s',
+				'depth'           => 0,
+				'walker'          => '',
+				));
+				echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+				?>
 		</div>
 	</div>
 </div>

@@ -15,30 +15,38 @@
     margin-top: -60px
   .main-wrap
     .logo 
-      width: 144px
       height: 94px
       background: url(../img/programm/main-logo.png) no-repeat center
       background-size: contain
-    .main-heading
-      color: #ffffff
-      font-size: 70px
-      font-weight: 600
-      letter-spacing: 1.89px
-      text-align: center
-      text-transform: uppercase
-      margin-top: 55px
-    .main-descr
-      color: #ffffff
-      font-size: 23px
-      text-align: center
-    .main-author
-      opacity: 0.6
-      color: #ffffff
-      font-size: 23px
-      font-weight: 400
-      letter-spacing: 0.62px
-      text-align: right
-      padding-right: 110px
+.main-heading, .wp-block-cover-text
+  color: #ffffff
+  font-size: 70px
+  font-weight: 600
+  letter-spacing: 1.89px
+  text-align: center
+  text-transform: uppercase
+  margin-top: 55px
+  @media (max-width: 768px)
+    font-size: 55px
+  @media (max-width: 576px)
+    font-size: 40px
+.main-descr
+  color: #ffffff
+  font-size: 23px
+  text-align: center
+  @media (max-width: 576px)
+    font-size: 20px
+.main-author
+  opacity: 0.6
+  color: #ffffff
+  font-size: 23px
+  font-weight: 400
+  letter-spacing: 0.62px
+  text-align: right
+  padding-right: 110px
+  @media (max-width: 576px)
+    font-size: 20px
+    padding-right: 0
 .programms
   .section-heading
     letter-spacing: 1.08px
@@ -58,9 +66,14 @@
     padding-top: 40px
     padding-bottom: 60px
     min-height: 673px
+    max-width: 525px
+    @media (max-width: 576px)
+      padding-top: 20px
     &-info
       display: flex
       justify-content: space-between
+      @media (max-width: 576px)
+        flex-direction: column
       &_class
         font-size: 30px
         color: #ffffff
@@ -68,11 +81,19 @@
         margin-left: 20px
         margin-bottom: 20px
         font-weight: 600
+        @media (max-width: 576px)
+          margin-left: auto
+          margin-right: auto
+          margin-bottom: 15px
       &_age
         font-size: 30px
         letter-spacing: 0.81px
         color: #ffffff
         margin-right: 20px
+        @media (max-width: 576px)
+          margin-left: auto
+          margin-right: auto
+          margin-bottom: 15px
     &-heading
       height: 59px
       width: 239px
@@ -80,6 +101,9 @@
       background: #ffffff
       margin-left: 0
       margin-bottom: 40px
+      @media (max-width: 576px)
+        margin-bottom: 10px
+        width: 190px
     &-text
       padding: 20px
       font-size: 14px
@@ -90,13 +114,15 @@
     line-height: 60px
     color: $main-blue
     text-align: center
+    @media (max-width: 576px)
+      font-size: 30px
   .programm2 .programm-heading
     color: $main-pink
   .programm1
     margin-right: 30px
     background: $main-blue
     @media (max-width: 992px)
-      margin-right: 0
+      margin-right: auto
       margin-bottom: 30px
   .programm2
     background: $main-pink
@@ -104,7 +130,6 @@
     position: absolute
     left: 50%
     transform: translateX(-50%)
-    margin-top: 20px
     width: 210px
     height: 46px
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
@@ -113,6 +138,7 @@
     color: $main-blue
     margin-left: auto
     margin-right: auto
+    bottom: 5%
   .programm-button2
     color: $main-pink
 .section-contacts_programms
