@@ -43,57 +43,47 @@
   </div>
   <!-- /.section-main -->
   <div class="section-about">
-    <div class="container d-flex">
+    <div class="container">
       <div class="section-about_wrap">
         <div class="section-about__img"><img src="<?php echo get_template_directory_uri(); ?>/img/main/main_about.png" alt=""></div>
         <div class="section-about__text">
-          <div class="section-about_heading">О НАС</div>
-          <div class="section-about_descr">
-            <p>
-              Международная Школа Монтессори - это школа с полным
-              погружением в английский язык для детей от 2 до 7 лет.
-            </p>
-            <p>
-              Школа расположена в исторической части Санкт-Петербурга
-              на Васильевском острове. IMS в течение 20 лет является ведущей
-              международной школой для детей из иностранных семей
-              проживающих в Санкт-Петербурге, сохраняя безупречную репутацию.
-            </p>
-            <p>
-              Школа является преемницей Аmerican Montessori
-              International,
-              основана Монтессори-педагогом...
-            </p>
-          </div>
-          <button class="button about-button">читать полностью</button>
+          <?php
+            $post_id = 605;
+            $newpost = pll_get_post($post_id);
+            $queried_post = get_post($newpost);
+            $content = $queried_post->post_content;
+            $content = apply_filters('the_content', $content);
+            $content = str_replace(']]>', ']]&gt;', $content);
+            echo $content;
+            ?>
         </div>
+<?/*[read more="Read more" less="Read less"][/read]*/?>
       </div>
       </div>
     <!-- /.section-about -->
     <div class="section-gallery">
       <div class="container">
-        <div class="gallery-heading">ФОТОГАЛЕРЕЯ</div>
+        <div class="gallery-heading"><?php echo the_field('photo-section-heading');?></div>
         <div class="gallery-slider">
-          <a href="img/gallery/img1.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img1.jpg" alt="" class="slide1-img slide-img"></a>
-          <a href="img/gallery/img2.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img2.jpg" alt="" class="slide2-img slide-img"></a>
-          <a href="img/gallery/img3.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img3.jpg" alt="" class="slide3-img slide-img"></a>
-          <a href="img/gallery/img4.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img4.jpg" alt="" class="slide4-img slide-img"></a>
-          <a href="img/gallery/img5.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img5.jpg" alt="" class="slide5-img slide-img"></a>
-          <a href="img/gallery/img6.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img6.jpg" alt="" class="slide6-img slide-img"></a>
-          <a href="img/gallery/img7.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img7.jpg" alt="" class="slide7-img slide-img"></a>
-          <a href="img/gallery/img8.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img8.jpg" alt="" class="slide8-img slide-img"></a>
-          <a href="img/gallery/img9.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img9.jpg" alt="" class="slide9-img slide-img"></a>
-          <a href="img/gallery/img10.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img10.jpg" alt="" class="slide10-img slide-img"></a>
-          <a href="img/gallery/img11.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img11.jpg" alt="" class="slide11-img slide-img"></a>
-          <a href="img/gallery/img12.jpg" data-lightbox="image-1"><img src="<?php echo get_template_directory_uri(); ?>/img/gallery/img12.jpg" alt="" class="slide12-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-1'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-1'); ?>" alt="" class="slide1-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-2'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-2'); ?>" alt="" class="slide2-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-3'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-3'); ?>" alt="" class="slide3-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-4'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-4'); ?>" alt="" class="slide5-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-5'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-5'); ?>" alt="" class="slide6-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-6'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-6'); ?>" alt="" class="slide7-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-7'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-7'); ?>" alt="" class="slide8-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-8'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-8'); ?>" alt="" class="slide9-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-9'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-9'); ?>" alt="" class="slide10-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-10'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-10;'); ?>" alt="" class="slide11-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-11'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-11;'); ?>" alt="" class="slide12-img slide-img"></a>
+          <a href="<?php echo the_field('gallery-photo-12'); ?>" data-lightbox="image-1"><img src="<?php echo the_field('gallery-photo-12;'); ?>" alt="" class="slide4-img slide-img"></a>
         </div>
-        <button class="button gallery-all">смотреть все фото</button>
       </div>
     </div>
     <!-- /.section-gallery -->
     <div class="section-vr">
       <div class="container">
-        <div class="section-heading">ВИРТУАЛЬНЫЙ ТУР</div>
+        <div class="section-heading"><?php echo the_field('vr-heading'); ?></div>
         <iframe src="http://home.krasko.su/171016_montess/" width="100%" height="450" scroll="no">
         </iframe>
       </div>

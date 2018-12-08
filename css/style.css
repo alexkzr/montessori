@@ -18,7 +18,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70px;
+  min-height: 70px;
+}
+
+.header-top_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .header-top_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .header-top__contacts, .header-top__buttons {
@@ -40,6 +55,7 @@
 @media (max-width: 576px) {
   .header-top__contacts, .header-top__buttons {
     margin-right: 10px;
+    text-align: center;
   }
 }
 
@@ -57,6 +73,9 @@
 
 .header-top__buttons {
   margin-right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 992px) {
@@ -68,6 +87,15 @@
   }
 }
 
+@media (max-width: 576px) {
+  .header-top__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .header-top .header-phone {
   margin-right: 20px;
 }
@@ -75,6 +103,12 @@
 @media (max-width: 992px) {
   .header-top .header-phone {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-top .header-phone {
+    margin-right: 0;
   }
 }
 
@@ -89,7 +123,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 
 .header-top .logo {
@@ -103,7 +136,8 @@
 
 @media (max-width: 576px) {
   .header-top .logo {
-    margin-right: 5px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -538,6 +572,14 @@
   position: relative;
 }
 
+.section-about__text h2 {
+  margin: 0 15px 15px 15px;
+}
+
+.section-about__text p {
+  margin: 10px;
+}
+
 .section-about_heading {
   color: #000000;
   font-size: 40px;
@@ -581,7 +623,7 @@
 
 .section-gallery {
   padding-bottom: 100px;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .section-gallery .gallery-heading {
@@ -765,6 +807,9 @@
   margin-right: 20px;
   margin-left: 0;
   margin-bottom: 25px;
+  width: 26px;
+  min-height: 20px;
+  max-height: 30px;
 }
 
 .section-contacts .item p {

@@ -35,17 +35,21 @@
     <header class="header site-header" id="masthead">
       <div class="header-top">
         <div class="container">
-          <div class="menu-cover"><span class="menu"></span></div>
-          <div class="logo"></div>
-          <div class="header-top__contacts">
-            <a href="tel:+79219935550" class="header-phone" autofocus>+7(921) 993-5550 </a>
-            <a href="mailto:info@montessori-petersburg.com" class="header-email">info@montessori-petersburg.com</a>
+          <div class="header-top_container">
+            <div class="logo"></div>
+            <div class="header-top__contacts">
+              <a href="tel:+79219935550" class="header-phone" autofocus>+7(921) 993-5550 </a>
+              <a href="mailto:info@montessori-petersburg.com" class="header-email">info@montessori-petersburg.com</a>
+            </div>
           </div>
           
-          <div class="header-top__buttons">
-            <?php echo do_shortcode('[FTVI]'); ?>
-          <div class="select-wrap"><?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 1,'dropdown' => 1 ) ); ?></div>
-            
+          <div class="header-top_container">
+            <div class="menu-cover"><span class="menu"></span></div>
+            <div class="header-top__buttons">
+              <?php echo do_shortcode('[FTVI]'); ?>
+            <div class="select-wrap"><?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 1,'dropdown' => 1 ) ); ?></div>
+              
+            </div>
           </div>
         </div>
       </div>

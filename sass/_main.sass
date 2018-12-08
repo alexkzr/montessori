@@ -11,7 +11,12 @@
     display: flex
     justify-content: space-between
     align-items: center
-    height: 70px
+    min-height: 70px
+    &_container
+      display: flex
+      @media (max-width: 576px)
+        flex-direction: column
+
     &__contacts, &__buttons
       display: flex
       margin-left: 0
@@ -19,6 +24,7 @@
         flex-direction: column
       @media (max-width: 576px)
         margin-right: 10px
+        text-align: center
       @media (max-width: 380px)
         margin-right: 3px
       a
@@ -27,18 +33,22 @@
 
     &__buttons
       margin-right: 0
+      align-items: center
       @media (max-width: 992px)
         flex-direction: row
+      @media (max-width: 576px)
+        flex-direction: column
     .header-phone
       margin-right: 20px
       @media (max-width: 992px)
         margin-left: 0
+      @media (max-width: 576px)
+        margin-right: 0
     .full
       margin-right: 20px
     .container  
       display: flex
       align-items: center
-      height: 100%
     .logo
       background: url(../img/main/logo_header.png) no-repeat center
       width: 48px
@@ -47,7 +57,8 @@
       margin-left: 0
       margin-right: 20px
       @media (max-width: 576px)
-        margin-right: 5px
+        margin-right: auto
+        margin-left: auto
     .bt_widget-vi-on
       display: flex
       margin-right: 50px
@@ -280,6 +291,11 @@
         width: 100%
   &__text
     position: relative
+    h2
+      margin: 0 15px 15px 15px
+    
+    p
+      margin: 10px
   &_heading
     color: #000000
     font-size: 40px
@@ -308,7 +324,7 @@
   padding-top: 54px
 .section-gallery
   padding-bottom: 100px
-  padding-top: 150px
+  padding-top: 100px
   .gallery-heading
     font-size: 40px
     font-weight: 400
@@ -407,6 +423,9 @@
       margin-right: 20px
       margin-left: 0
       margin-bottom: 25px
+      width: 26px
+      min-height: 20px
+      max-height: 30px
     p
       margin-left: 0
     .item-numbers
