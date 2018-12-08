@@ -393,22 +393,6 @@
   opacity: 1;
 }
 
-.main-slider .slide1 {
-  background: url(../img/main/main-bg1.jpg) no-repeat center;
-}
-
-.main-slider .slide2 {
-  background: url(../img/main/main-bg2.jpg) no-repeat center;
-}
-
-.main-slider .slide3 {
-  background: url(../img/main/main-bg3.jpg) no-repeat center;
-}
-
-.main-slider .slide4 {
-  background: url(../img/main/main-bg4.jpg) no-repeat center;
-}
-
 .main-slider .slide {
   position: relative;
   display: -webkit-box;
@@ -417,6 +401,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   min-height: 525px;
   height: auto;
@@ -1806,6 +1792,40 @@ th {
 .page-id-30 .wp-block-cover-text {
   font-size: 40px;
   text-transform: uppercase;
+}
+
+.page-id-35 .wp-block-media-text {
+  max-width: 500px;
+  margin: 15px;
+}
+
+.page-id-35 .has-medium-font-size {
+  margin: 15px;
+  font-size: 24px;
+}
+
+.menu-header-menu-english-container, .menu-header-menu-container {
+  height: 100%;
+}
+
+select#lang_choice_1 {
+  background: transparent;
+  border: transparent;
+}
+
+.select-wrap, select#lang_choice_1 option {
+  position: relative;
+}
+
+.select-wrap::before, select#lang_choice_1 option::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url("http://localhost/montessoriwp/wp-content/uploads/2018/12/ru_RU.png") no-repeat center;
+  background-size: contain;
+  top: 0;
+  left: -20px;
 }
 
 * {

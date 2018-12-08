@@ -44,7 +44,7 @@
           </div>
           <div class="header-top__si"><a href="<?php echo get_template_directory_uri(); ?>/#"><img src="<?php echo get_template_directory_uri(); ?>/img/si.png" alt=""></a></div>
           <div class="header-top__buttons hidden-md">
-            <a href="<?php echo get_template_directory_uri(); ?>/#" class="full" id="full">Версия для слабовидящих</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/#" class="full" id="full" autofocus>Версия для слабовидящих</a>
             <a href="<?php echo get_template_directory_uri(); ?>/" class="header-lang">Eng</a>
           </div>
         </div>

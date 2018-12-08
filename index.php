@@ -1,38 +1,39 @@
+<?
 /* Template Name: index
 */
-
+?>
 <?php include 'header.php'?>
     <div class="main">
       <div class="main-slider">
-        <div class="slide slide1">
+        <div class="slide slide1" style="background-image: url(<?php echo the_field('main-slider-1');?>)">
           <div class="container">
             <div class="backdrop">
               <img src="<?php echo get_template_directory_uri(); ?>/img/main/main-logo-large.png" alt="" class="logo">
-              <div class="heading">добро пожаловать в international montessori school</div>
+              <div class="heading"><?php echo the_field('slide1-heading'); ?></div>
             </div>
           </div>
         </div>
-        <div class="slide slide2">
+        <div class="slide slide2" style="background-image: url(<?php echo the_field('main-slider-2');?>)">
           <div class="container">
             <div class="backdrop">
               <img src="<?php echo get_template_directory_uri(); ?>/img/main/main-logo-large.png" alt="" class="logo">
-              <div class="heading">добро пожаловать в international montessori school</div>
+              <div class="heading"><?php echo the_field('slide2-heading'); ?></div>
             </div>
           </div>
         </div>
-        <div class="slide slide3">
+        <div class="slide slide3" style="background-image: url(<?php echo the_field('main-slider-3');?>)">
           <div class="container">
             <div class="backdrop">
               <img src="<?php echo get_template_directory_uri(); ?>/img/main/main-logo-large.png" alt="" class="logo">
-              <div class="heading">добро пожаловать в international montessori school</div>
+              <div class="heading"><?php echo the_field('slide3-heading'); ?></div>
             </div>
           </div>
         </div>
-        <div class="slide slide4">
+        <div class="slide slide4" style="background-image: url(<?php echo the_field('main-slider-4');?>)">
           <div class="container">
             <div class="backdrop">
               <img src="<?php echo get_template_directory_uri(); ?>/img/main/main-logo-large.png" alt="" class="logo">
-              <div class="heading">добро пожаловать в international montessori school</div>
+              <div class="heading"><?php echo the_field('slide4-heading'); ?></div>
             </div>
           </div>
         </div>

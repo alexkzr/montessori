@@ -38,13 +38,14 @@
           <div class="menu-cover"><span class="menu"></span></div>
           <div class="logo"></div>
           <div class="header-top__contacts">
-            <a href="tel:+79219935550" class="header-phone">+7(921) 993-5550 </a>
+            <a href="tel:+79219935550" class="header-phone" autofocus>+7(921) 993-5550 </a>
             <a href="mailto:info@montessori-petersburg.com" class="header-email">info@montessori-petersburg.com</a>
           </div>
           <div class="header-top__si"><a href="<?php echo get_template_directory_uri(); ?>/#"><img src="<?php echo get_template_directory_uri(); ?>/img/si.png" alt=""></a></div>
           <div class="header-top__buttons hidden-md">
             <a href="<?php echo get_template_directory_uri(); ?>/#" class="full" id="full">Версия для слабовидящих</a>
-            <a href="<?php echo get_template_directory_uri(); ?>/" class="header-lang">Eng</a>
+          <div class="select-wrap"><?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 1,'dropdown' => 1 ) ); ?></div>
+            
           </div>
         </div>
       </div>
@@ -57,15 +58,6 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-          <!-- <ul class="hamburger hidden">
-            <li><a href="<?php echo get_template_directory_uri(); ?>/index.php">главная</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/programms.php">программы</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/teachers.php">преподаватели</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/calendar.php"><span class="hidden-992">новости и </span>календарь</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/terms.php">условия</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/contacts.php">контакты</a></li>
-            <li><a href="<?php echo get_template_directory_uri(); ?>/full-version.php">Сведения об образовательной организации</a></li>
-          </ul> -->
         </div>
       </nav>
       <!-- /.header-bottom -->
