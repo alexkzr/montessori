@@ -20,7 +20,7 @@
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/favicon-32x32.png">
-  <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/site.webmanifest">
+  <link rel="manifest" href="/montessoriwp/site.webmanifest">
   <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -41,9 +41,9 @@
             <a href="tel:+79219935550" class="header-phone" autofocus>+7(921) 993-5550 </a>
             <a href="mailto:info@montessori-petersburg.com" class="header-email">info@montessori-petersburg.com</a>
           </div>
-          <div class="header-top__si"><a href="<?php echo get_template_directory_uri(); ?>/#"><img src="<?php echo get_template_directory_uri(); ?>/img/si.png" alt=""></a></div>
-          <div class="header-top__buttons hidden-md">
-            <a href="<?php echo get_template_directory_uri(); ?>/#" class="full" id="full">Версия для слабовидящих</a>
+          
+          <div class="header-top__buttons">
+            <?php echo do_shortcode('[FTVI]'); ?>
           <div class="select-wrap"><?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 1,'dropdown' => 1 ) ); ?></div>
             
           </div>

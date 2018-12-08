@@ -24,18 +24,11 @@
       a
         @media (max-width: 576px)
           font-size: 12px
-    &__si
-      @media (min-width: 991px)
-        display: none
-      @media (max-width: 576px)
-        margin-left: 0
-      a
-        img
-          width: 30px
-          height: 30px
 
     &__buttons
       margin-right: 0
+      @media (max-width: 992px)
+        flex-direction: row
     .header-phone
       margin-right: 20px
       @media (max-width: 992px)
@@ -55,7 +48,12 @@
       margin-right: 20px
       @media (max-width: 576px)
         margin-right: 5px
-
+    .bt_widget-vi-on
+      display: flex
+      margin-right: 50px
+      align-items: center
+      img
+        margin-right: 20px
   .menu-cover
     position: absolute
     top: 48%
