@@ -1,7 +1,7 @@
 /* Template Name: Programms
 */
 
-<?php include 'header.php'?>
+<?php get_header();?>
 <div class="programm-main">
         <div class="container">
           <div class="main-wrap">
@@ -55,7 +55,6 @@
               использования туалета, рисуют и вместе наслаждаются музыкой. Одним
               из важнейших приоритетов в классе малышей является развитие речи.
             </div>
-            <button class="button programm-button1">ЗАПИСАТЬСЯ</button>
           </div>
           <div class="programm programm2">
             <div class="programm-info">
@@ -83,7 +82,6 @@
               Учителя тщательно следуют интересам каждого ребенка, предоставляя
               специально разработанные уроки и материалы по мере его готовности.
             </div>
-            <button class="button programm-button2">ЗАПИСАТЬСЯ</button>
           </div>
         </div>
         <!-- /programms-wrap -->
@@ -92,4 +90,4 @@
     </div>
     <!-- /programms -->
 <?php include 'contacts-b.php'?>
-  <?php include 'footer.php'?>
+  <?php get_footer();?>

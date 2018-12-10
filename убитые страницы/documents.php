@@ -1,17 +1,11 @@
-/* Template Name: Full Version
+/* Template Name: Documents
 */
-
-<?php include 'header.php'?>
-
-<!-- /.programm-main -->
-
+<?php get_header();?>
 <?php include 'sitemap.php'?>
-
   <?php 
-  $id=28; 
+  $id=32; 
   $post = get_post($id); 
   $content = apply_filters('the_content', $post->post_content); 
   echo $content;  
   ?>
-
-<?php include 'footer.php'?>
+<?php get_footer();?>

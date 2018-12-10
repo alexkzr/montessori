@@ -3,7 +3,7 @@
 */
 
 
-<?php include 'header.php'?>
+<?php get_header();?>
     <div class="section-teachers">
       <div class="container">
         <div class="section-teachers__info">
@@ -113,4 +113,4 @@
     <!-- /.section-teachers -->
 
 <?php include 'contacts-b.php'?>
-<?php include 'footer.php'?>
+<?php get_footer();?>

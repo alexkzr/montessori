@@ -1,7 +1,7 @@
 /* Template Name: Terms
 */
 
-<?php include 'header.php'?>
+<?php get_header();?>
 
       <div class="terms-section">
         <div class="terms">
@@ -136,4 +136,4 @@
       <!-- /.terms-section -->
 
 <?php include 'contacts-b.php'?>
-<?php include 'footer.php'?>
+<?php get_footer();?>

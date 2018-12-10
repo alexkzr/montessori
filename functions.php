@@ -167,3 +167,7 @@ function new_excerpt_more( $more ){
 	return '<a href="'. get_permalink($post) . '">Читать дальше...</a>';
 }
 
+function sitemap( $atts ){
+		require 'sitemap.php';
+	}
+add_shortcode( 'sitemapBlock', 'sitemap' );

@@ -717,10 +717,6 @@
   min-height: 548px;
 }
 
-.section-contacts {
-  background: #eed1df;
-}
-
 .section-contacts .section-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,6 +810,11 @@
 
 .section-contacts .item p {
   margin-left: 0;
+}
+
+.section-contacts .item p a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .section-contacts .item .item-numbers {

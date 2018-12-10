@@ -1,7 +1,7 @@
 /* Template Name: Paid Services
 */
 
-<?php include 'header.php'?>
+<?php get_header();?>
 <?php include 'sitemap.php'?>
 <?php 
   $id=46; 
@@ -9,4 +9,4 @@
   $content = apply_filters('the_content', $post->post_content); 
   echo $content;  
   ?>
-<?php include 'footer.php'?>
+<?php get_footer();?>

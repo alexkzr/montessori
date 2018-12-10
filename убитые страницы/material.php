@@ -1,14 +1,13 @@
-/* Template Name: Educational Standards
+/* Template Name: Material
 */
 
-<?php include 'header.php'?>
-
-
+<?php get_header();?>
 <?php include 'sitemap.php'?>
 <?php 
-  $id=37; 
+  $id=42; 
   $post = get_post($id); 
   $content = apply_filters('the_content', $post->post_content); 
   echo $content;  
   ?>
-<?php include 'footer.php'?>
+
+<?php get_footer();?>

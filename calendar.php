@@ -1,7 +1,7 @@
 /* Template Name: Calendar
 */
 
-<?php include 'header.php'?>
+<?php get_header();?>
 
       <div class="section-events">
         <div class="container">
@@ -89,6 +89,12 @@
             </div>
             <!-- /.calendar-wrap -->
           </div>
+          <?php 
+  $id=19; 
+  $post = get_post($id); 
+  $content = apply_filters('the_content', $post->post_content); 
+  echo $content;  
+  ?>
         </div>
         <!-- /.container -->
       </div>
@@ -96,4 +102,4 @@
 
       <?php include 'contacts-b.php'?>
 
-    <?php include 'footer.php'?>
+    <?php get_footer();?>

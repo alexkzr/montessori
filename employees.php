@@ -1,7 +1,7 @@
 /* Template Name: Employees
 */
 
-<?php include 'header.php'?>
+<?php get_header();?>
 <div class="programm-main">
         <div class="container">
           <div class="main-wrap">
@@ -93,7 +93,7 @@
               </div>
         </div>
       </div>
-<?php include 'footer.php'?>
+<?php get_footer();?>
 
 
 

@@ -2,7 +2,7 @@
 /* Template Name: index
 */
 ?>
-<?php include 'header.php'?>
+<?php get_header();?>
     <div class="main">
       <div class="main-slider">
         <div class="slide slide1" style="background-image: url(<?php echo the_field('main-slider-1');?>)">
@@ -57,7 +57,6 @@
             echo $content;
             ?>
         </div>
-<?/*[read more="Read more" less="Read less"][/read]*/?>
       </div>
       </div>
     <!-- /.section-about -->
@@ -92,4 +91,4 @@
 <?php include 'contacts-b.php'?>
 <?php include 'map.php'?>
 
-<?php include 'footer.php'?>
+<?php get_footer();?>

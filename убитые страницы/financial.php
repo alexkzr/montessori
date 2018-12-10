@@ -1,12 +1,12 @@
-/* Template Name: Scholarships
+/* Template Name: Financial
 */
 
-<?php include 'header.php'?>
+<?php get_header();?>
 <?php include 'sitemap.php'?>
 <?php 
-  $id=44; 
+  $id=48; 
   $post = get_post($id); 
   $content = apply_filters('the_content', $post->post_content); 
   echo $content;  
   ?>
-<?php include 'footer.php'?>
+<?php get_footer();?>
