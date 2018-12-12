@@ -6,7 +6,7 @@
       <div class="section-events">
         <div class="container">
           <div class="event-wrap">
-            <div class="event">
+            <!-- <div class="event">
               <div class="event-heading">
                 <div class="event-heading__date">26 декабря</div>
                 <div class="event-heading__name">Новогодний утренник</div>
@@ -75,31 +75,25 @@
                   parturient montes, nascetur ridiculus mus. In hac habitasse
                 </p>
               </div>
-            </div>
+            </div> -->
             <!-- /.event -->
             <div class="calendar-wrap">
-              <div class="calendar"></div>
-              <!-- /.calendar -->
-              <button class="button calendar-button">
+              <div class="calendar" id="calendar">
+              
+              <?php echo do_shortcode('[events_calendar long_events=0]');?>
+              </div>
+              <!-- <button class="button calendar-button">
                 записаться <span class="hidden-mobile">на мероприятие</span>
-              </button>
-              <!-- /.button calendar-button -->
+              </button> -->
               <a href="#" class="year-plan">Обзор 2018-2019 учебного года</a>
-              <!-- /.year-plan -->
             </div>
             <!-- /.calendar-wrap -->
           </div>
-          <?php 
-  $id=19; 
-  $post = get_post($id); 
-  $content = apply_filters('the_content', $post->post_content); 
-  echo $content;  
-  ?>
+
         </div>
         <!-- /.container -->
       </div>
       <!-- /.section-events -->
 
-      <?php include 'contacts-b.php'?>
 
     <?php get_footer();?>

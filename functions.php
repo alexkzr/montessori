@@ -116,9 +116,12 @@ function montessori_scripts() {
 	wp_enqueue_style( 'montessori-style-slick', get_template_directory_uri() . '/css/slick.css' );
 	wp_enqueue_style( 'montessori-style-slicktheme', get_template_directory_uri() . '/css/slick-theme.css' );
 	wp_enqueue_style( 'montessori-style-lightbox', get_template_directory_uri() . '/css/lightbox.min.css' );
+	wp_enqueue_style( 'fullcalendarcss', get_template_directory_uri() . '/css/fullcalendar.css' );
 	wp_enqueue_style( 'montessori-style-main', get_template_directory_uri() . '/css/style.css' );
 	wp_enqueue_script('jQ', get_template_directory_uri() . '/js/jquery-3.3.1.min.js');
 	 wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js');
+	 wp_enqueue_script('moment', get_template_directory_uri() . '/js/moment.min.js');
+	 wp_enqueue_script('fullcalendar', get_template_directory_uri() . '/js/fullcalendar.min.js');
 	 wp_enqueue_script('lightbox', get_template_directory_uri() . '/js/lightbox.min.js');
 	 wp_enqueue_script('slick', get_template_directory_uri() . '/js/slick.min.js');
 	 wp_enqueue_script('custom', get_template_directory_uri() . '/js/script.js');
@@ -171,3 +174,17 @@ function sitemap( $atts ){
 		require 'sitemap.php';
 	}
 add_shortcode( 'sitemapBlock', 'sitemap' );
+
+function contacts(){
+	
+		$post_id = 720;
+		$newpost = pll_get_post($post_id);
+		$queried_post = get_post($newpost);
+		$content = $queried_post->post_content;
+		$content = apply_filters('the_content', $content);
+		$content = str_replace(']]>', ']]&gt;', $content);
+		return $content;
+	
+	}
+add_shortcode( 'contactsBlock', 'contacts' );
+

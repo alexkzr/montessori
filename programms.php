@@ -2,19 +2,18 @@
 */
 
 <?php get_header();?>
-<div class="programm-main">
+<div class="programm-main" style="background-image: url(<?php echo the_field('programm-section-bgimage');?>);">
         <div class="container">
           <div class="main-wrap">
-            <div class="logo"></div>
+            <div class="logo" style="background-image: url(<?php echo the_field('programm-section-logo');?>);"></div>
             <!-- /.logo -->
-            <h1 class="main-heading">ПРОГРАММЫ</h1>
+            <h1 class="main-heading"><?php echo the_field('programm-section-heading');?></h1>
             <!-- /.main-heading -->
             <p class="main-descr">
-              "Образование – это самое мощное оружие, с помощью которого можно
-              изменить мир".
+              <?php echo the_field('programm-section-quote');?>
             </p>
             <!-- /.main-descr -->
-            <p class="main-author">Нельсон Мандела</p>
+            <p class="main-author"><?php echo the_field('programm-section-author');?></p>
             <!-- /.main-author -->
           </div>
           <!-- /.main-wrap -->
@@ -25,62 +24,26 @@
     </div>
     <div class="programms">
       <div class="container">
-        <h2 class="section-heading">УЧЕБНЫЕ ПРОГРАММЫ</h2>
+        <h2 class="section-heading"><?php echo the_field('programm-section-heading2');?></h2>
         <div class="programms-wrap">
           <div class="programm programm1">
             <div class="programm-info">
-              <div class="programm-info_class">КЛАСС</div>
-              <div class="programm-info_age">18 мес - 3 лет</div>
+              <div class="programm-info_class"><?php echo the_field('programm-section-class1');?></div>
+              <div class="programm-info_age"><?php echo the_field('programm-section-age1');?></div>
             </div>
-            <div class="programm-heading">TODDLER</div>
+            <div class="programm-heading"><?php echo the_field('programm-section-classname1');?></div>
             <div class="programm-text">
-              Программа для малышей в Международной школе Монтессори - первый
-              шаг на пути воспитания любви к обучению на всю жизнь. В младшем
-              классе обучаются дети от 18 месяцев до 3-х лет. В этом возрасте
-              дети по своей природе любопытны и хотят учиться. Наши опытные и
-              профессиональные преподаватели с радостью направят вашего ребёнка
-              в его путешествии на пути к открытиям, используя полный набор
-              специально разработанных учебных материалов в по-домашнему тёплой,
-              безопасной и красивой обучающей среде. Упражнения, которыми дети
-              занимаются в классе, развивают координацию, умение контролировать
-              движения, сосредоточенность и независимость. Малышам по своей
-              природе интересно заниматься повседневными взрослыми делами. В то
-              время как дети с радостью снова и снова выполняют такие
-              упражнения, совершенствуя координацию и добиваясь успеха, они
-              становятся более независимыми в желании и способности
-              самостоятельно заботиться о себе и окружающей их среде. Малыши
-              самостоятельно накрывают на стол для перекуса, моют посуду,
-              вытирают разлитую воду и протирают столы, естественно развивая
-              навыки мелкой моторики. Они приобретают навыки самостоятельного
-              использования туалета, рисуют и вместе наслаждаются музыкой. Одним
-              из важнейших приоритетов в классе малышей является развитие речи.
+              <?php echo the_field('programm-section-programmtext1');?>
             </div>
           </div>
           <div class="programm programm2">
             <div class="programm-info">
-              <div class="programm-info_class">КЛАСС</div>
-              <div class="programm-info_age">3 - 7 лет</div>
+              <div class="programm-info_class"><?php echo the_field('programm-section-class2');?></div>
+              <div class="programm-info_age"><?php echo the_field('programm-section-age2');?></div>
             </div>
-            <div class="programm-heading">PRIMARY</div>
+            <div class="programm-heading"><?php echo the_field('programm-section-classname2');?></div>
             <div class="programm-text">
-              В Primary классе обучаются дети от 3 до 7 лет. Красивая,
-              спокойная, гармоничная, солнечная среда тщательно разработана
-              таким образом, чтобы дети учились, выполняя разнообразную
-              Монтессори работу и приобретая навыки, необходимые для достижения
-              успеха в будущем. Наши высококвалифицированные преподаватели и
-              специально разработанные материалы способствуют максимальному
-              развитию академических навыков, а также развитию творческого
-              потенциала и характера ребёнка. В Основной программе все области
-              развития и обучения взаимосвязаны. Преподаватели направляют детей
-              таким образом, чтобы они, используя свою естественную
-              любознательность и любовь к открытиям, развивали важные навыки в
-              математике, чтении, письме, географии, науке, культуре, сенсорном
-              развитии, искусстве и других важных жизненных умениях. Размеры
-              класса достаточно большие для того, чтобы обеспечить динамичную
-              социальную среду, а индивидуальные занятия и занятия в небольших
-              группах помогают ребенку достичь высоких академических успехов.
-              Учителя тщательно следуют интересам каждого ребенка, предоставляя
-              специально разработанные уроки и материалы по мере его готовности.
+              <?php echo the_field('programm-section-programmtext2');?>
             </div>
           </div>
         </div>
@@ -89,5 +52,5 @@
       <!-- /container -->
     </div>
     <!-- /programms -->
-<?php include 'contacts-b.php'?>
+<?php echo do_shortcode('[contactsBlock]');?>
   <?php get_footer();?>

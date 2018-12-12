@@ -35,7 +35,7 @@
     <header class="header site-header" id="masthead">
       <div class="header-top">
         <div class="container">
-          <div class="header-top_container">
+          <div class="header-top_container header-top_container1">
             <div class="logo"></div>
             <div class="header-top__contacts">
               <a href="tel:+79219935550" class="header-phone" autofocus>+7(921) 993-5550 </a>
@@ -43,7 +43,7 @@
             </div>
           </div>
           
-          <div class="header-top_container">
+          <div class="header-top_container header-top_container2">
             <div class="menu-cover"><span class="menu"></span></div>
             <div class="header-top__buttons">
               <?php echo do_shortcode('[FTVI]'); ?>

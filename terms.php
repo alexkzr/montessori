@@ -62,7 +62,8 @@
           <div class="reviews-heading">отзывы</div>
           <div class="container">
             <div class="reviews-wrap">
-              <div class="review review1">
+            <?php echo do_shortcode('[WPCR_SHOW POSTID="ALL" NUM="5" PAGINATE="1" PERPAGE="5" SHOWFORM="1" HIDEREVIEWS="0" HIDERESPONSE="0" SNIPPET="" MORE="" HIDECUSTOM="0" ]');?>
+              <!-- <div class="review review1">
                 <div class="review-img"></div>
                 <div class="review-text">
                   <div class="review-text__name">Nam Kyung Lee</div>
@@ -127,7 +128,7 @@
                     their great effort.
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -135,5 +136,4 @@
       </div>
       <!-- /.terms-section -->
 
-<?php include 'contacts-b.php'?>
 <?php get_footer();?>
