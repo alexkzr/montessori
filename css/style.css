@@ -1418,7 +1418,7 @@ table.em-calendar td.eventless-today, table.em-calendar td.eventful-today {
   }
 }
 
-.terms-section .terms-text {
+.terms-text {
   padding: 30px 65px;
   text-align: justify;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -1427,13 +1427,13 @@ table.em-calendar td.eventless-today, table.em-calendar td.eventful-today {
 }
 
 @media (max-width: 576px) {
-  .terms-section .terms-text {
+  .terms-text {
     padding: 10px;
     margin: 0 auto;
   }
 }
 
-.terms-section .terms-text p {
+.terms-text p {
   margin-bottom: 25px;
   font-size: 14px;
   font-weight: 600;
@@ -1441,12 +1441,12 @@ table.em-calendar td.eventless-today, table.em-calendar td.eventful-today {
 }
 
 @media (max-width: 576px) {
-  .terms-section .terms-text p {
+  .terms-text p {
     font-weight: 400;
   }
 }
 
-.terms-section .reviews-heading {
+.reviews-heading {
   margin: 20px 0;
   padding: 35px 0;
   text-align: center;
@@ -1456,7 +1456,7 @@ table.em-calendar td.eventless-today, table.em-calendar td.eventful-today {
   font-weight: 600;
 }
 
-.terms-section .reviews .review {
+.reviews .review {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 40px;
@@ -1468,12 +1468,12 @@ table.em-calendar td.eventless-today, table.em-calendar td.eventful-today {
 }
 
 @media (max-width: 576px) {
-  .terms-section .reviews .review {
+  .reviews .review {
     padding-left: 25px;
   }
 }
 
-.terms-section .reviews .review-img {
+.reviews .review-img {
   width: 151px !important;
   background-image: url("../img/terms/logo-gold.png");
   background-repeat: no-repeat;
@@ -1486,12 +1486,12 @@ table.em-calendar td.eventless-today, table.em-calendar td.eventful-today {
 }
 
 @media (max-width: 576px) {
-  .terms-section .reviews .review-img {
+  .reviews .review-img {
     display: none;
   }
 }
 
-.terms-section .reviews .review-text {
+.reviews .review-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1504,23 +1504,62 @@ table.em-calendar td.eventless-today, table.em-calendar td.eventful-today {
   max-width: 774px;
 }
 
-.terms-section .reviews .review-text__name {
+.reviews .review-text__name {
   margin-left: 0;
   font-size: 20px;
   font-weight: 600;
   margin-top: 40px;
 }
 
-.terms-section .reviews .review-text__date {
+.reviews .review-text__date {
   margin-left: 0;
   margin-top: 14px;
   font-size: 18px;
 }
 
-.terms-section .reviews .review-text__descr {
+.reviews .review-text__descr {
   margin-left: 0;
   font-size: 15px;
   margin-top: 25px;
+}
+
+.wpcr3_respond_1, .wpcr3_respond_2 {
+  margin: 0 auto !important;
+}
+
+.wpcr3_button_1.button {
+  width: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+}
+
+.reviews-heading {
+  background: #aee0f5;
+  margin: 0 !important;
+  padding: 20px;
+  color: #ffffff;
+}
+
+div.wpcr3_review blockquote.wpcr3_content.wpcr3_admin_response {
+  color: #000000;
+}
+
+div.wpcr3_review blockquote.wpcr3_content {
+  margin-left: 30px;
+  padding: 20px 0;
+}
+
+blockquote.wpcr3_content.wpcr3_admin_response {
+  padding: 0;
 }
 
 .section-grads .grads-heading {
@@ -1900,6 +1939,11 @@ select#lang_choice_1 {
   background-size: contain;
   top: 0;
   left: -20px;
+}
+
+.entry-title {
+  text-align: center;
+  margin: 25px auto;
 }
 
 * {
